@@ -1,0 +1,158 @@
+{
+    "exportFormatVersion": 2,
+    "exportTime": "2024-12-17 12:01:40",
+    "containerVersion": {
+        "path": "accounts/6261827847/containers/202246293/versions/0",
+        "accountId": "6261827847",
+        "containerId": "202246293",
+        "containerVersionId": "0",
+        "container": {
+            "path": "accounts/6261827847/containers/202246293",
+            "accountId": "6261827847",
+            "containerId": "202246293",
+            "name": "cliente.v4alfradique.com - WEB",
+            "publicId": "GTM-MWM24WLR",
+            "usageContext": [
+                "WEB"
+            ],
+            "fingerprint": "1734351834643",
+            "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/6261827847/containers/202246293/workspaces?apiLink=container",
+            "features": {
+                "supportUserPermissions": true,
+                "supportEnvironments": true,
+                "supportWorkspaces": true,
+                "supportGtagConfigs": false,
+                "supportBuiltInVariables": true,
+                "supportClients": false,
+                "supportFolders": true,
+                "supportTags": true,
+                "supportTemplates": true,
+                "supportTriggers": true,
+                "supportVariables": true,
+                "supportVersions": true,
+                "supportZones": true,
+                "supportTransformations": false
+            },
+            "tagIds": [
+                "GTM-MWM24WLR"
+            ]
+        },
+        "tag": [
+            {
+                "accountId": "6261827847",
+                "containerId": "202246293",
+                "tagId": "28",
+                "name": "🟤 | [cHTML] SetCookie's userData",
+                "type": "html",
+                "parameter": [
+                    {
+                        "type": "TEMPLATE",
+                        "key": "html",
+                        "value": "<script>\n(function() {\n\n    function setCookie(cookieName, cookieValue) {\n        var expirationTime = 31560000;\n        expirationTime = expirationTime * 1000; // Converte expirationtime para milissegundos\n        var date = new Date(); \n        var dateTimeNow = date.getTime(); \n      \n        date.setTime(dateTimeNow + expirationTime);\n        var expirationDate = date.toUTCString();\n        \n        document.cookie = cookieName + \"=\" + cookieValue + \"; SameSite=None; Secure; expires=\" + expirationDate + \"; path=/; domain=.{{0 | domínio}}\";\n    }\n  \n    var cookiesData = {\n        'em': '{{jsc | # email}}',\n        'ph': '{{jsc | # phone}}',\n        'fn': '{{regexp | first name}}',\n        'ln': '{{regexp | last name}}'\n    };\n    for (var name in cookiesData) {\n        setCookie(name, cookiesData[name]);\n    }\n\n})();\n\n</script>\n"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "supportDocumentWrite",
+                        "value": "false"
+                    }
+                ],
+                "fingerprint": "1734436717365",
+                "tagFiringOption": "ONCE_PER_EVENT",
+                "monitoringMetadata": {
+                    "type": "MAP"
+                },
+                "consentSettings": {
+                    "consentStatus": "NOT_SET"
+                }
+            }
+        ],
+        "variable": [
+            {
+                "accountId": "6261827847",
+                "containerId": "202246293",
+                "variableId": "29",
+                "name": "cookie | em",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "em"
+                    }
+                ],
+                "fingerprint": "1734436836489",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6261827847",
+                "containerId": "202246293",
+                "variableId": "30",
+                "name": "cookie | ph",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ph"
+                    }
+                ],
+                "fingerprint": "1734436847833",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6261827847",
+                "containerId": "202246293",
+                "variableId": "31",
+                "name": "cookie | fn",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "fn"
+                    }
+                ],
+                "fingerprint": "1734436858301",
+                "formatValue": {}
+            },
+            {
+                "accountId": "6261827847",
+                "containerId": "202246293",
+                "variableId": "32",
+                "name": "cookie | ln",
+                "type": "k",
+                "parameter": [
+                    {
+                        "type": "BOOLEAN",
+                        "key": "decodeCookie",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "ln"
+                    }
+                ],
+                "fingerprint": "1734436869397",
+                "formatValue": {}
+            }
+        ],
+        "fingerprint": "1734436900444",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/6261827847/containers/202246293/versions/0?apiLink=version"
+    }
+}
