@@ -1,4 +1,4 @@
-# GTM Tag, SET COOKIES USERDATA IN BROWSER
+# GTM Tag, Set userData cookies in browser client
 
 # 🛠️ Remote Services | Serviços remotos
 
